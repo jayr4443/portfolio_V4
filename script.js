@@ -144,77 +144,23 @@ const CATEGORY_COLORS = {
 
 const PROJECTS = [
   {
-    id: "s2d-scale",
-    name: "S2D Scale System",
+    id: "hris",
+    name: "HRIS — Human Resource Information System",
     category: "Internal Systems",
     status: "live",
     blurb:
-      "A plant-floor weighing and dispatch system: scale transactions, box counts, SO/DO matching, and print-per-weigh tickets for warehouse teams.",
-    tags: ["Desktop App", ".NET", "MSSQL", "POS Integration"],
-    images: [
-      "assets/projects/s2d-scale-1.png",
-      "assets/projects/s2d-scale-2.png",
+      "A full HR platform built to feel welcoming, not bureaucratic — headcount and attendance at a glance, leave requests and approvals, employment-type breakdowns, and payroll periods, so HR teams and employees both actually enjoy opening it.",
+    tags: [
+      "Employee 360°",
+      "Attendance & Leave",
+      "Payroll Integration",
+      "Analytics Dashboard",
     ],
-  },
-  {
-    id: "announcement-system",
-    name: "Internal Announcement & Ticketing Console",
-    category: "Internal Systems",
-    status: "live",
-    blurb:
-      "A super-admin console for company-wide announcements, maintenance notices, tickets, and a knowledge base — used to keep every branch in sync.",
-    tags: ["Admin Panel", "Role-based Access", "CMS"],
-    images: ["assets/projects/announcement-system-1.png"],
-  },
-  {
-    id: "newmarket-eportal",
-    name: "New Market E-Portal",
-    category: "Internal Systems",
-    status: "live",
-    blurb:
-      "A field sales portal for promo staff to log daily sales, track quota attainment, monitor P.O.D., foot traffic, and stock requests per store.",
-    tags: ["Sales Ops", "Reporting", "Multi-store"],
-    images: ["assets/projects/newmarket-eportal-1.png"],
-  },
-  {
-    id: "pms",
-    name: "Performance Management System",
-    category: "Internal Systems",
-    status: "live",
-    blurb:
-      "Handles 3rd/5th-month probationary and annual performance appraisals — criteria, feedback cycles, and development-plan tracking for HR teams.",
-    tags: ["HR Tech", "Appraisals", "Workflow"],
-    images: ["assets/projects/pms-1.png"],
-  },
-  {
-    id: "itams",
-    name: "ITAMS — IT Asset Management System",
-    category: "Internal Systems",
-    status: "live",
-    blurb:
-      "Tracks computers, software licenses, warranties and vendors company-wide, with live dashboards for license compliance and warranty coverage.",
-    tags: ["Asset Tracking", "Dashboards", "Audit Log"],
-    images: ["assets/projects/itams-1.png"],
-  },
-  {
-    id: "mdcu-ers",
-    name: "MDCU-ERS Request System",
-    category: "Internal Systems",
-    status: "live",
-    blurb:
-      "A digital MPC request workflow — submit, review, route for signing, and post straight to SAP — replacing a fully paper-based approval chain.",
-    tags: ["Approval Workflow", "SAP Integration", "E-signing"],
-    images: ["assets/projects/mdcu-ers-1.png"],
-  },
-  {
-    id: "medical-benefits",
-    name: "Medical Benefits Portal",
-    category: "Internal Systems",
-    status: "live",
-    blurb:
-      "A secure self-service portal for employees to manage healthcare benefits, submit claims, and check coverage without going through HR each time.",
-    tags: ["Employee Portal", "Auth", "Claims"],
-    images: ["assets/projects/medical-benefits-1.png"],
+    images: [
+      "assets/projects/hris-login-1.png",
+      "assets/projects/hris-dashboard-1.png",
+      "assets/projects/hris-dashboard-2.png",
+    ],
   },
   {
     id: "star-system",
@@ -224,17 +170,11 @@ const PROJECTS = [
     blurb:
       "End-to-end order fulfillment: bookings, picklists, sales-order/DR generation, replacements, credit memos, and aging reports in one dashboard.",
     tags: ["Order Management", "Document Generation", "Fulfillment"],
-    images: ["assets/projects/star-system-1.png"],
-  },
-  {
-    id: "cargoflow",
-    name: "CargoFlow — Freight Operations Console",
-    category: "Internal Systems",
-    status: "live",
-    blurb:
-      "Tracks freight from booking to delivery, clears customs paperwork, manages warehouse stock and client billing, with role-based staff access.",
-    tags: ["Logistics", "RBAC", "Billing"],
-    images: ["assets/projects/cargoflow-1.png"],
+    images: [
+      "assets/projects/star-system-2.png",
+      "assets/projects/star-system-3.png",
+      "assets/projects/star-system-1.png",
+    ],
   },
   {
     id: "ecommerce-store",
@@ -251,36 +191,100 @@ const PROJECTS = [
     ],
     images: [
       "assets/projects/ecommerce-hero-1.png",
-      "assets/projects/ecommerce-catalog-1.png",
+      "assets/projects/ecommerce-hero-2.png",
+      // "assets/projects/ecommerce-catalog-1.png",
       "assets/projects/ecommerce-storefront-2.png",
       "assets/projects/ecommerce-backoffice-1.png",
     ],
   },
   {
-    id: "ghl-automation",
-    name: "GHL Funnels, Pipelines & AI Voice/Chat Agents",
-    category: "GHL & CRM",
-    status: "live",
-    blurb:
-      "GoHighLevel builds for coaches and agencies: coded funnels, pipeline automation, missed-call text-back, and Claude/GPT-powered chat & voice agents.",
-    tags: ["GoHighLevel", "Workflows", "AI Agents"],
-    images: [],
-  },
-  {
-    id: "hris",
-    name: "HRIS — Human Resource Information System",
+    id: "itams",
+    name: "ITAMS — IT Asset Management System",
     category: "Internal Systems",
     status: "live",
     blurb:
-      "A full HR platform built to feel welcoming, not bureaucratic — headcount and attendance at a glance, leave requests and approvals, employment-type breakdowns, and payroll periods, so HR teams and employees both actually enjoy opening it.",
-    tags: [
-      "Employee 360°",
-      "Attendance & Leave",
-      "Payroll Integration",
-      "Analytics Dashboard",
-    ],
-    images: ["assets/projects/hris-dashboard-1.png"],
+      "Tracks computers, software licenses, warranties and vendors company-wide, with live dashboards for license compliance and warranty coverage.",
+    tags: ["Asset Tracking", "Dashboards", "Audit Log"],
+    images: ["assets/projects/itams-2.png", "assets/projects/itams-1.png"],
   },
+  {
+    id: "announcement-system",
+    name: "Internal Announcement & Ticketing Console",
+    category: "Internal Systems",
+    status: "live",
+    blurb:
+      "A super-admin console for company-wide announcements, maintenance notices, tickets, and a knowledge base — used to keep every branch in sync.",
+    tags: ["Admin Panel", "Role-based Access", "CMS"],
+    images: [
+      "assets/projects/announcement-system-2.png",
+      "assets/projects/announcement-system-1.png",
+    ],
+  },
+  {
+    id: "cargoflow",
+    name: "CargoFlow — Freight Operations Console",
+    category: "Internal Systems",
+    status: "live",
+    blurb:
+      "Tracks freight from booking to delivery, clears customs paperwork, manages warehouse stock and client billing, with role-based staff access.",
+    tags: ["Logistics", "RBAC", "Billing"],
+    images: [
+      "assets/projects/cargoflow-1.png",
+      "assets/projects/cargoflow-2.png",
+    ],
+  },
+  {
+    id: "mdcu-ers",
+    name: "MDCU-ERS Request System",
+    category: "Internal Systems",
+    status: "live",
+    blurb:
+      "A digital MPC request workflow — submit, review, route for signing, and post straight to SAP — replacing a fully paper-based approval chain.",
+    tags: ["Approval Workflow", "SAP Integration", "E-signing"],
+    images: [
+      "assets/projects/mdcu-ers-2.png",
+      "assets/projects/mdcu-ers-1.png",
+    ],
+  },
+  {
+    id: "pms",
+    name: "Performance Management System",
+    category: "Internal Systems",
+    status: "live",
+    blurb:
+      "Handles 3rd/5th-month probationary and annual performance appraisals — criteria, feedback cycles, and development-plan tracking for HR teams.",
+    tags: ["HR Tech", "Appraisals", "Workflow"],
+    images: ["assets/projects/pms-2.png", "assets/projects/pms-1.png"],
+  },
+
+  {
+    id: "newmarket-eportal",
+    name: "New Market E-Portal",
+    category: "Internal Systems",
+    status: "live",
+    blurb:
+      "A field sales portal for promo staff to log daily sales, track quota attainment, monitor P.O.D., foot traffic, and stock requests per store.",
+    tags: ["Sales Ops", "Reporting", "Multi-store"],
+    images: [
+      "assets/projects/newmarket-eportal-2.png",
+      "assets/projects/newmarket-eportal-1.png",
+    ],
+  },
+  {
+    id: "medical-benefits",
+    name: "Medical Benefits Portal",
+    category: "Internal Systems",
+    status: "live",
+    blurb:
+      "A secure self-service portal for employees to manage healthcare benefits, submit claims, and check coverage without going through HR each time.",
+    tags: ["Employee Portal", "Auth", "Claims"],
+    images: [
+      "assets/projects/medical-benefits-1.png",
+      "assets/projects/medical-benefits-2.png",
+      "assets/projects/medical-benefits-3.png",
+    ],
+  },
+
   {
     id: "ap-payroll",
     name: "APAS — AP Payroll System",
@@ -294,7 +298,34 @@ const PROJECTS = [
       "Audit Trail",
       "Master Data Config",
     ],
-    images: ["assets/projects/apas-ap-payroll-1.png"],
+    images: [
+      "assets/projects/apas-ap-payroll-2.png",
+      "assets/projects/apas-ap-payroll-1.png",
+    ],
+  },
+  {
+    id: "s2d-scale",
+    name: "S2D Scale System",
+    category: "Internal Systems",
+    status: "live",
+    blurb:
+      "A plant-floor weighing and dispatch system: scale transactions, box counts, SO/DO matching, and print-per-weigh tickets for warehouse teams.",
+    tags: ["Desktop App", ".NET", "MSSQL", "POS Integration"],
+    images: [
+      "assets/projects/s2d-scale-1.png",
+      "assets/projects/s2d-scale-2.png",
+    ],
+  },
+
+  {
+    id: "ghl-automation",
+    name: "GHL Funnels, Pipelines & AI Voice/Chat Agents",
+    category: "GHL & CRM",
+    status: "live",
+    blurb:
+      "GoHighLevel builds for coaches and agencies: coded funnels, pipeline automation, missed-call text-back, and Claude/GPT-powered chat & voice agents.",
+    tags: ["GoHighLevel", "Workflows", "AI Agents"],
+    images: [],
   },
   {
     id: "non-payroll",
@@ -566,26 +597,41 @@ function initZoomViewer() {
   if (!overlay || !viewport || !img) return;
 
   document.getElementById("zoomCloseBtn").addEventListener("click", closeZoom);
-  document.getElementById("zoomInBtn").addEventListener("click", () => setZoom(zoomState.scale + 0.5));
-  document.getElementById("zoomOutBtn").addEventListener("click", () => setZoom(zoomState.scale - 0.5));
+  document
+    .getElementById("zoomInBtn")
+    .addEventListener("click", () => setZoom(zoomState.scale + 0.5));
+  document
+    .getElementById("zoomOutBtn")
+    .addEventListener("click", () => setZoom(zoomState.scale - 0.5));
   document.getElementById("zoomResetBtn").addEventListener("click", resetZoom);
 
   overlay.addEventListener("click", (e) => {
     if (e.target === overlay) closeZoom();
   });
 
-  document.addEventListener("keydown", (e) => {
-    if (!overlay.classList.contains("is-open")) return;
-    if (e.key === "Escape") { e.stopPropagation(); closeZoom(); }
-    if (e.key === "+" || e.key === "=") setZoom(zoomState.scale + 0.5);
-    if (e.key === "-") setZoom(zoomState.scale - 0.5);
-  }, true);
+  document.addEventListener(
+    "keydown",
+    (e) => {
+      if (!overlay.classList.contains("is-open")) return;
+      if (e.key === "Escape") {
+        e.stopPropagation();
+        closeZoom();
+      }
+      if (e.key === "+" || e.key === "=") setZoom(zoomState.scale + 0.5);
+      if (e.key === "-") setZoom(zoomState.scale - 0.5);
+    },
+    true,
+  );
 
   // Scroll wheel to zoom, centered roughly on cursor
-  viewport.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    setZoom(zoomState.scale + (e.deltaY < 0 ? 0.35 : -0.35));
-  }, { passive: false });
+  viewport.addEventListener(
+    "wheel",
+    (e) => {
+      e.preventDefault();
+      setZoom(zoomState.scale + (e.deltaY < 0 ? 0.35 : -0.35));
+    },
+    { passive: false },
+  );
 
   // Drag to pan once zoomed in
   viewport.addEventListener("pointerdown", (e) => {
@@ -602,7 +648,10 @@ function initZoomViewer() {
     zoomState.y = e.clientY - zoomState.startY;
     applyZoomTransform(false);
   });
-  const endDrag = () => { zoomState.dragging = false; viewport.classList.remove("is-dragging"); };
+  const endDrag = () => {
+    zoomState.dragging = false;
+    viewport.classList.remove("is-dragging");
+  };
   viewport.addEventListener("pointerup", endDrag);
   viewport.addEventListener("pointercancel", endDrag);
 
@@ -614,20 +663,29 @@ function initZoomViewer() {
   // Two-finger pinch to zoom on touch devices
   let pinchStartDist = null;
   let pinchStartScale = 1;
-  const touchDist = (t1, t2) => Math.hypot(t1.clientX - t2.clientX, t1.clientY - t2.clientY);
-  viewport.addEventListener("touchstart", (e) => {
-    if (e.touches.length === 2) {
-      pinchStartDist = touchDist(e.touches[0], e.touches[1]);
-      pinchStartScale = zoomState.scale;
-    }
-  }, { passive: true });
-  viewport.addEventListener("touchmove", (e) => {
-    if (e.touches.length === 2 && pinchStartDist) {
-      e.preventDefault();
-      const ratio = touchDist(e.touches[0], e.touches[1]) / pinchStartDist;
-      setZoom(pinchStartScale * ratio);
-    }
-  }, { passive: false });
+  const touchDist = (t1, t2) =>
+    Math.hypot(t1.clientX - t2.clientX, t1.clientY - t2.clientY);
+  viewport.addEventListener(
+    "touchstart",
+    (e) => {
+      if (e.touches.length === 2) {
+        pinchStartDist = touchDist(e.touches[0], e.touches[1]);
+        pinchStartScale = zoomState.scale;
+      }
+    },
+    { passive: true },
+  );
+  viewport.addEventListener(
+    "touchmove",
+    (e) => {
+      if (e.touches.length === 2 && pinchStartDist) {
+        e.preventDefault();
+        const ratio = touchDist(e.touches[0], e.touches[1]) / pinchStartDist;
+        setZoom(pinchStartScale * ratio);
+      }
+    },
+    { passive: false },
+  );
   viewport.addEventListener("touchend", (e) => {
     if (e.touches.length < 2) pinchStartDist = null;
   });
@@ -653,7 +711,10 @@ function closeZoom() {
 
 function setZoom(next) {
   zoomState.scale = Math.max(1, Math.min(4, next));
-  if (zoomState.scale === 1) { zoomState.x = 0; zoomState.y = 0; }
+  if (zoomState.scale === 1) {
+    zoomState.x = 0;
+    zoomState.y = 0;
+  }
   applyZoomTransform(true);
 }
 
@@ -672,7 +733,8 @@ function applyZoomTransform(animate) {
   img.style.transition = animate ? "transform .2s ease" : "none";
   img.style.transform = `translate(${zoomState.x}px, ${zoomState.y}px) scale(${zoomState.scale})`;
   if (level) level.textContent = Math.round(zoomState.scale * 100) + "%";
-  if (viewport) viewport.style.cursor = zoomState.scale > 1 ? "grab" : "zoom-in";
+  if (viewport)
+    viewport.style.cursor = zoomState.scale > 1 ? "grab" : "zoom-in";
   const outBtn = document.getElementById("zoomOutBtn");
   const inBtn = document.getElementById("zoomInBtn");
   if (outBtn) outBtn.disabled = zoomState.scale <= 1;

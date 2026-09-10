@@ -1158,6 +1158,46 @@ main {
   max-width: 100%;
   overflow: hidden;
 }
+/* ==========================================================================
+   Inline SVG icons inside stack tiles (Lightning CSS)
+   ========================================================================== */
+
+.stack-chip .icon-tile svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+  color: #f7df1e; /* Lightning CSS yellow */
+  filter: drop-shadow(0 0 5px rgba(247, 223, 30, 0.35));
+  transition:
+    filter 0.35s var(--ease),
+    transform 0.35s var(--ease);
+}
+
+.stack-chip:hover .icon-tile svg {
+  filter: drop-shadow(0 0 10px rgba(247, 223, 30, 0.75));
+  transform: scale(1.06);
+}
+
+/* Light theme — darker yellow for contrast on pale tiles */
+[data-theme="light"] .stack-chip .icon-tile svg {
+  color: #b58900;
+  filter: drop-shadow(0 0 3px rgba(181, 137, 0, 0.25));
+}
+
+/* Match your existing responsive tile sizes */
+@media (max-width: 800px) {
+  .stack-chip .icon-tile svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stack-chip .icon-tile svg {
+    width: 20px;
+    height: 20px;
+  }
+}
 .stack-label {
   padding: 0 1.5rem;
   margin: 0 0 1rem;
