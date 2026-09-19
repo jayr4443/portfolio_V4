@@ -19,7 +19,10 @@
       content="full stack developer, GHL developer, GoHighLevel expert, e-commerce developer, AI automation, web developer Philippines, CRM builder"
     />
     <meta name="author" content="Joshua G. Rolloque" />
-    <link rel="canonical" href="https://jayrolloque.dev/" />
+    <link
+      rel="canonical"
+      href="https://portfolio-v4.joshuarolloque7.workers.dev/"
+    />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -32,7 +35,10 @@
       content="Full-stack software engineer building GHL CRM systems, e-commerce stores, internal business platforms, and AI automation agents."
     />
     <meta property="og:image" content="assets/profile/profile.jpg" />
-    <meta property="og:url" content="https://jayrolloque.dev/" />
+    <meta
+      property="og:url"
+      content="https://portfolio-v4.joshuarolloque7.workers.dev/"
+    />
     <meta name="twitter:card" content="summary_large_image" />
 
     <link
@@ -51,7 +57,7 @@
         "@type": "Person",
         "name": "Joshua G. Rolloque",
         "jobTitle": "Full-Stack Software Engineer",
-        "url": "https://jayrolloque.dev/",
+        "url": "https://portfolio-v4.joshuarolloque7.workers.dev/",
         "sameAs": [
           "https://www.linkedin.com/in/jayr-rolloque-5565a5246",
           "https://github.com/jayr4443"
@@ -157,6 +163,20 @@
               href="mailto:jayrrolloque16@gmail.com"
               aria-label="Email Joshua G. Rolloque"
               ><i class="ph ph-envelope-simple"></i
+            ></a>
+            <a
+              class="social-btn"
+              href="https://wa.me/639304151395"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Message Joshua G. Rolloque on WhatsApp (opens in a new tab)"
+              ><i class="ph-fill ph-whatsapp-logo"></i
+            ></a>
+            <a
+              class="social-btn"
+              href="viber://chat?number=%2B639304151395"
+              aria-label="Message Joshua G. Rolloque on Viber"
+              ><i class="ph-fill ph-phone"></i
             ></a>
           </div>
         </div>
@@ -701,42 +721,133 @@
             <div>
               <h2 id="contact-heading">Have a system that needs building?</h2>
               <p>
-                Tell me what you're trying to fix or automate I'll tell you
+                Tell me what you're trying to fix or automate — I'll tell you
                 honestly whether it's a quick win or a real build. You can also
                 reach me on Viber or WhatsApp at <strong>0930 415 1395</strong>.
               </p>
+              <div class="contact-actions">
+                <a
+                  class="btn btn-ghost"
+                  href="https://wa.me/639304151395"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ph-fill ph-whatsapp-logo"></i> WhatsApp</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  href="viber://chat?number=%2B639304151395"
+                  ><i class="ph-fill ph-phone"></i> Viber</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  href="https://www.linkedin.com/in/jayr-rolloque-5565a5246"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ph-fill ph-linkedin-logo"></i> LinkedIn</a
+                >
+                <a
+                  class="btn btn-ghost"
+                  href="https://github.com/jayr4443"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="ph-fill ph-github-logo"></i> GitHub</a
+                >
+              </div>
             </div>
-            <div class="contact-actions">
-              <a class="btn btn-primary" href="mailto:jayrrolloque16@gmail.com"
-                ><i class="ph ph-envelope-simple"></i> Email me</a
-              >
-              <a
-                class="btn btn-ghost"
-                href="https://wa.me/639304151395"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="ph-fill ph-whatsapp-logo"></i> WhatsApp</a
-              >
-              <a
-                class="btn btn-ghost"
-                href="viber://chat?number=%2B639304151395"
-                ><i class="ph-fill ph-phone"></i> Viber</a
-              >
-              <a
-                class="btn btn-ghost"
-                href="https://www.linkedin.com/in/jayr-rolloque-5565a5246"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="ph-fill ph-linkedin-logo"></i> LinkedIn</a
-              >
-              <a
-                class="btn btn-ghost"
-                href="https://github.com/jayr4443"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="ph-fill ph-github-logo"></i> GitHub</a
-              >
-            </div>
+
+            <!-- Inquiry form — sends straight to jayrrolloque16@gmail.com via Web3Forms -->
+            <form
+              class="inquiry-form"
+              id="inquiryForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              novalidate
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="ce62bb49-87bb-4788-8555-4be1476ff78a"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New inquiry from portfolio-v4"
+              />
+              <input
+                type="hidden"
+                name="from_name"
+                value="Joshua G. Rolloque — Portfolio"
+              />
+
+              <!-- Spam honeypot (bots fill this, humans don't) -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
+              <div class="form-row">
+                <label for="inq-name">Your name</label>
+                <input
+                  id="inq-name"
+                  name="name"
+                  type="text"
+                  required
+                  autocomplete="name"
+                  placeholder="Jane Dela Cruz"
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="inq-email">Your email</label>
+                <input
+                  id="inq-email"
+                  name="email"
+                  type="email"
+                  required
+                  autocomplete="email"
+                  placeholder="you@company.com"
+                />
+              </div>
+
+              <div class="form-row">
+                <label for="inq-type">I'm reaching out as</label>
+                <select id="inq-type" name="inquiry_type" required>
+                  <option value="">Select one…</option>
+                  <option>Client — project inquiry</option>
+                  <option>Employer — job opportunity</option>
+                  <option>Recruiter — staffing / contract</option>
+                  <option>Collaboration / partnership</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-row">
+                <label for="inq-message"
+                  >What do you need built or fixed?</label
+                >
+                <textarea
+                  id="inq-message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="A short description of the project, timeline, and budget range if you have one."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="inqSubmit">
+                <i class="ph ph-paper-plane-tilt"></i> Send inquiry
+              </button>
+
+              <p
+                class="form-status"
+                id="formStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
           </div>
         </section>
 

@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFilters();
   initCarousel();
   initRoleRotator();
+  initInquiryForm();
 });
 
 /* ---------------------------------------------------------------------- */
@@ -739,4 +740,58 @@ function applyZoomTransform(animate) {
   const inBtn = document.getElementById("zoomInBtn");
   if (outBtn) outBtn.disabled = zoomState.scale <= 1;
   if (inBtn) inBtn.disabled = zoomState.scale >= 4;
+}
+
+/* ---------------------------------------------------------------------- */
+/* Inquiry form — sends to jayrrolloque16@gmail.com via Web3Forms        */
+/* ---------------------------------------------------------------------- */
+function initInquiryForm() {
+  const form = document.getElementById("inquiryForm");
+  if (!form) return;
+
+  const status = document.getElementById("formStatus");
+  const submitBtn = document.getElementById("inqSubmit");
+  const originalBtnHTML = submitBtn.innerHTML;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    status.textContent = "";
+    status.className = "form-status";
+
+    if (!form.checkValidity()) {
+      status.textContent = "Please fill in all fields with a valid email.";
+      status.classList.add("is-error");
+      form.reportValidity();
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `<i class="ph ph-circle-notch"></i> Sending…`;
+
+    try {
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      const json = await res.json();
+
+      if (json.success) {
+        form.reset();
+        status.textContent =
+          "Thanks — your message has been sent. I'll get back to you within 24 hours.";
+        status.classList.add("is-success");
+      } else {
+        throw new Error(json.message || "Submission failed");
+      }
+    } catch (err) {
+      status.textContent =
+        "Something went wrong sending your message. Please email me directly at jayrrolloque16@gmail.com.";
+      status.classList.add("is-error");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnHTML;
+    }
+  });
 }
